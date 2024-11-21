@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AutSim\Log.h" />
     <ClInclude Include="src\AutSim.h" />
     <ClInclude Include="src\AutSim\Application.h" />
     <ClInclude Include="src\AutSim\Core.h" />
     <ClInclude Include="src\AutSim\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\AutSim\Log.cpp" />
     <ClCompile Include="src\AutSim\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
