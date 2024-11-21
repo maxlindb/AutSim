@@ -1,0 +1,3 @@
+[submodule "AutSim/vendor/spdlog"]
+	path = AutSim/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
