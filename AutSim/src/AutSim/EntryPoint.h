@@ -7,9 +7,10 @@ extern AutSim::Application* AutSim::CreateApplication();
 int main(int argc, char** argv)
 {
 	printf("AutSim engine startup\n");
-	AutSim::Log::Init();
-	AutSim::Log::GetCoreLogger()->warn("Initialized Log!");
-	AutSim::Log::GetClientLogger()->info("Hello");
+	AutSim::Log::Init();	
+	AUT_CORE_WARN("Initialized Log!");	
+	int a = 5;
+	AUT_INFO("Hello! Var={0}", a);
 
 	auto app = AutSim::CreateApplication();
 	app->Run();
