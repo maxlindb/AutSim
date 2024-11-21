@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "AutSim/Application.h"
+#include "AutSim//Log.h"
 
 
 // -------- Entry point -------------------
