@@ -8,7 +8,7 @@ workspace "AutSim"
 		"Dist"
 	}
 
-outputdir = "%{cfg.buildcfg}--%{cfg.system}-${cfg.architecture}"
+outputdir = "%{cfg.buildcfg}--%{cfg.system}-%{cfg.architecture}"
 
 project "AutSim"
 	location "AutSim"
@@ -26,7 +26,7 @@ project "AutSim"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"AutSim/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
@@ -77,7 +77,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include",
+		"AutSim/vendor/spdlog/include",
 		"AutSim/src"
 	}
 
