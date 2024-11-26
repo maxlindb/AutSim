@@ -8,7 +8,7 @@ workspace "AutSim"
 		"Dist"
 	}
 
-outputdir = "%{cfg.buildcfg}--%{cfg.system}-%{cfg.architecture}"
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "AutSim"
 	location "AutSim"
