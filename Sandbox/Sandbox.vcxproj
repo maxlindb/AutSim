@@ -137,6 +137,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\SandboxApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\AutSim\AutSim.vcxproj">
       <Project>{989304A8-8435-2F7E-6DF0-42D25931B6CE}</Project>
     </ProjectReference>

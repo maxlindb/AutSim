@@ -33,6 +33,7 @@ project "AutSim"
 		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "latest"
+		buildoptions "/utf-8"
 
 		defines
 		{
@@ -90,6 +91,7 @@ project "Sandbox"
 		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "latest"
+		buildoptions "/utf-8"
 
 		defines
 		{
@@ -106,7 +108,5 @@ project "Sandbox"
 
 	filter "configurations:Dist"
 		defines "AUT_DIST"
-		optimize "On"
-
-	filter { "system:windows" } -- I hope this is right -Max
-		buildoptions "/utf-8"
+		optimize "On"	
+		
