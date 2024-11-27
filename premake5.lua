@@ -26,7 +26,7 @@ project "AutSim"
 
 	includedirs
 	{
-		"AutSim/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
@@ -37,7 +37,7 @@ project "AutSim"
 		defines
 		{
 			"AUT_PLATFORM_WINDOWS",
-			"AUT_BUILD_DLL",
+			"AUT_BUILD_DLL"
 		}
 
 		postbuildcommands
@@ -49,7 +49,7 @@ project "AutSim"
 		defines "AUT_DEBUG"
 		symbols "On"
 
-	filter "configurations:Debug"
+	filter "configurations:Release"
 		defines "AUT_RELEASE"
 		optimize "On"
 
@@ -100,7 +100,7 @@ project "Sandbox"
 		defines "AUT_DEBUG"
 		symbols "On"
 
-	filter "configurations:Debug"
+	filter "configurations:Release"
 		defines "AUT_RELEASE"
 		optimize "On"
 
