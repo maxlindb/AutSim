@@ -63,7 +63,7 @@ project "AutSim"
 
 project "Sandbox"
 	location "Sandbox"
-	kind "ConsoleApp"	
+	kind "ConsoleApp"
 	language "C++"
 
 	targetdir	("bin/" .. outputdir .. "/%{prj.name}")
@@ -93,7 +93,7 @@ project "Sandbox"
 
 		defines
 		{
-			"AUT_PLATFORM_WINDOWS",			
+			"AUT_PLATFORM_WINDOWS"
 		}
 
 	filter "configurations:Debug"
