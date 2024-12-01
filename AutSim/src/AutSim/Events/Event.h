@@ -62,7 +62,7 @@ namespace AutSim {
 		}
 
 	protected:
-		bool m_handled = false;
+		bool m_Handled = false;
 	};
 
 	class EventDispatcher
@@ -80,17 +80,22 @@ namespace AutSim {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.m_Handled == func(*(T*)&m_Event);
+				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
 			}
-			else return false;
+			return false;
 		}
 	private:
 		Event& m_Event;
 	};
 
-	inline std::ostream& operator<<(std::ostream& os, const Event& e)
+	//this is from the video, but doesn't work. The version right below this method does, though.
+	/*inline std::ostream& operator<<(std::ostream& os, const Event& e)
 	{
 		return os << e.ToString();
+	}*/
+
+	inline std::string format_as(const Event& e) {
+		return e.ToString();
 	}
 }

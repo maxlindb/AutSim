@@ -16,7 +16,12 @@ namespace AutSim
 	void Application::Run()
 	{	
 		WindowResizeEvent e(1280, 720);
-		AUT_TRACE(e);
+		if (e.IsInCategory(EventCategoryApplication)) {
+			AUT_TRACE(e);
+		}
+		if (e.IsInCategory(EventCategoryInput)) {
+			AUT_TRACE(e);
+		}
 
 		while (true);
 	}

@@ -27,8 +27,8 @@ namespace AutSim
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 
 	private:
-		int m_Width;
-		int m_Height;
+		unsigned int m_Width;
+		unsigned int m_Height;
 	};
 
 	class AUTSIM_API WindowCloseEvent : public Event
