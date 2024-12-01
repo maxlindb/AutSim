@@ -4,6 +4,9 @@
     <Filter Include="AutSim">
       <UniqueIdentifier>{989304A8-8435-2F7E-6DF0-42D25931B6CE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AutSim\Events">
+      <UniqueIdentifier>{7C444DDB-E804-C911-B13F-128F1DBF0DEE}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\AutSim.h" />
@@ -15,6 +18,15 @@
     </ClInclude>
     <ClInclude Include="src\AutSim\EntryPoint.h">
       <Filter>AutSim</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AutSim\Events\Event.h">
+      <Filter>AutSim\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AutSim\Events\KeyEvent.h">
+      <Filter>AutSim\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AutSim\Events\MouseEvent.h">
+      <Filter>AutSim\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\AutSim\Log.h">
       <Filter>AutSim</Filter>
